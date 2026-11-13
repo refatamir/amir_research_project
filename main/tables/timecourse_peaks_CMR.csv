@@ -1,0 +1,193 @@
+rat,band,align,cond,n_sessions,peak_pct,peak_t
+all,delta 1-3,Press,correct long,59,13.6189575,1.15
+all,delta 1-3,Press,late short,46,10.080635,0.9199999999999999
+all,delta 1-3,Press,correct short,50,4.075527,0.81
+all,delta 1-3,Press,early long (hold>0.3),52,28.895367,0.9700000000000002
+all,delta 1-3,Release,correct long,59,9.9791765,-0.16000000000000014
+all,delta 1-3,Release,late short,46,6.8634987,-0.5800000000000001
+all,delta 1-3,Release,correct short,50,6.6039443,-0.8300000000000001
+all,delta 1-3,Release,early long (hold>0.3),52,6.8942904,0.040000000000000036
+all,theta 4-7,Press,correct long,59,22.822142,0.52
+all,theta 4-7,Press,late short,46,18.60317,0.52
+all,theta 4-7,Press,correct short,50,17.348457,0.41999999999999993
+all,theta 4-7,Press,early long (hold>0.3),52,28.891146,0.54
+all,theta 4-7,Release,correct long,59,20.435928,-0.7000000000000002
+all,theta 4-7,Release,late short,46,14.715481,-0.75
+all,theta 4-7,Release,correct short,50,15.418649,-0.2200000000000002
+all,theta 4-7,Release,early long (hold>0.3),52,18.284094,-0.08000000000000007
+all,alpha 8-12,Press,correct long,59,15.438974,1.5199999999999996
+all,alpha 8-12,Press,late short,46,10.770726,0.43000000000000016
+all,alpha 8-12,Press,correct short,50,12.570524,0.43000000000000016
+all,alpha 8-12,Press,early long (hold>0.3),52,16.045523,0.7799999999999998
+all,alpha 8-12,Release,correct long,59,9.538591,-0.6699999999999999
+all,alpha 8-12,Release,late short,46,8.475494,-1.29
+all,alpha 8-12,Release,correct short,50,12.511086,-0.33000000000000007
+all,alpha 8-12,Release,early long (hold>0.3),52,10.194433,-0.27
+all,beta 13-29,Press,correct long,59,10.160279,0.6800000000000002
+all,beta 13-29,Press,late short,46,10.367239,0.41000000000000014
+all,beta 13-29,Press,correct short,50,7.606113,0.41999999999999993
+all,beta 13-29,Press,early long (hold>0.3),52,15.892708,0.79
+all,beta 13-29,Release,correct long,59,9.715021,-0.43000000000000016
+all,beta 13-29,Release,late short,46,8.128667,-1.38
+all,beta 13-29,Release,correct short,50,7.4667454,-0.33000000000000007
+all,beta 13-29,Release,early long (hold>0.3),52,23.873425,-0.98
+all,lowG 30-60,Press,correct long,59,2.3512006,1.5099999999999998
+all,lowG 30-60,Press,late short,46,1.9581437,0.4900000000000002
+all,lowG 30-60,Press,correct short,50,18.60931,0.8399999999999999
+all,lowG 30-60,Press,early long (hold>0.3),52,4.6875954,0.96
+all,lowG 30-60,Release,correct long,59,1.7706752,-0.20999999999999996
+all,lowG 30-60,Release,late short,46,3.3005595,-1.26
+all,lowG 30-60,Release,correct short,50,1.5815258,-0.8199999999999998
+all,lowG 30-60,Release,early long (hold>0.3),52,9.218693,-0.98
+all,highG 61-100,Press,correct long,59,-9.892738,0.1499999999999999
+all,highG 61-100,Press,late short,46,-8.5566225,0.3900000000000001
+all,highG 61-100,Press,correct short,50,-9.943694,0.10999999999999988
+all,highG 61-100,Press,early long (hold>0.3),52,-11.418903,0.2200000000000002
+all,highG 61-100,Release,correct long,59,-9.262544,-0.9900000000000002
+all,highG 61-100,Release,late short,46,-7.0500193,-1.05
+all,highG 61-100,Release,correct short,50,-12.4366045,-0.8199999999999998
+all,highG 61-100,Release,early long (hold>0.3),52,-11.46726,-0.6699999999999999
+134,delta 1-3,Press,correct long,11,34.62807,0.94
+134,delta 1-3,Press,late short,8,40.185535,1.3900000000000001
+134,delta 1-3,Press,correct short,10,23.131752,0.8199999999999998
+134,delta 1-3,Press,early long (hold>0.3),8,12.834013,0.8599999999999999
+134,delta 1-3,Release,correct long,11,29.555643,-0.9300000000000002
+134,delta 1-3,Release,late short,8,30.185043,0.1499999999999999
+134,delta 1-3,Release,correct short,10,25.782658,-0.8300000000000001
+134,delta 1-3,Release,early long (hold>0.3),8,31.15847,-0.8799999999999999
+134,theta 4-7,Press,correct long,11,26.314878,1.54
+134,theta 4-7,Press,late short,8,16.694593,0.43999999999999995
+134,theta 4-7,Press,correct short,10,31.422413,0.20999999999999996
+134,theta 4-7,Press,early long (hold>0.3),8,32.054996,0.2999999999999998
+134,theta 4-7,Release,correct long,11,19.616772,-1.03
+134,theta 4-7,Release,late short,8,14.221787,-1.04
+134,theta 4-7,Release,correct short,10,29.282093,-0.4700000000000002
+134,theta 4-7,Release,early long (hold>0.3),8,43.387806,-0.6600000000000001
+134,alpha 8-12,Press,correct long,11,14.508486,-0.7
+134,alpha 8-12,Press,late short,8,19.293404,1.9100000000000001
+134,alpha 8-12,Press,correct short,10,24.146307,0.7999999999999998
+134,alpha 8-12,Press,early long (hold>0.3),8,16.592907,-0.6399999999999999
+134,alpha 8-12,Release,correct long,11,14.655256,0.2400000000000002
+134,alpha 8-12,Release,late short,8,15.8193,0.2599999999999998
+134,alpha 8-12,Release,correct short,10,44.262028,-0.8199999999999998
+134,alpha 8-12,Release,early long (hold>0.3),8,25.283205,-0.7400000000000002
+134,beta 13-29,Press,correct long,11,12.446451,1.54
+134,beta 13-29,Press,late short,8,13.910568,0.3799999999999999
+134,beta 13-29,Press,correct short,10,20.031727,0.8199999999999998
+134,beta 13-29,Press,early long (hold>0.3),8,17.483223,0.7799999999999998
+134,beta 13-29,Release,correct long,11,10.257328,-1.19
+134,beta 13-29,Release,late short,8,13.357019,-1.26
+134,beta 13-29,Release,correct short,10,11.890018,-0.8199999999999998
+134,beta 13-29,Release,early long (hold>0.3),8,18.703175,-0.7599999999999998
+134,lowG 30-60,Press,correct long,11,3.1263947,-0.7
+134,lowG 30-60,Press,late short,8,11.287296,1.6399999999999997
+134,lowG 30-60,Press,correct short,10,16.802132,0.8199999999999998
+134,lowG 30-60,Press,early long (hold>0.3),8,12.098991,0.77
+134,lowG 30-60,Release,correct long,11,3.159213,0.1499999999999999
+134,lowG 30-60,Release,late short,8,8.065319,-1.34
+134,lowG 30-60,Release,correct short,10,5.914068,0.029999999999999805
+134,lowG 30-60,Release,early long (hold>0.3),8,8.385611,-0.8300000000000001
+134,highG 61-100,Press,correct long,11,-9.51618,0.1499999999999999
+134,highG 61-100,Press,late short,8,-10.476083,0.7000000000000002
+134,highG 61-100,Press,correct short,10,-9.502906,0.10000000000000009
+134,highG 61-100,Press,early long (hold>0.3),8,-12.230831,0.2200000000000002
+134,highG 61-100,Release,correct long,11,-9.300268,-1.49
+134,highG 61-100,Release,late short,8,-11.04905,-1.24
+134,highG 61-100,Release,correct short,10,-14.067215,-0.79
+134,highG 61-100,Release,early long (hold>0.3),8,-14.855504,-0.33000000000000007
+135,delta 1-3,Press,correct long,28,18.7196,1.2400000000000002
+135,delta 1-3,Press,late short,20,23.414898,0.96
+135,delta 1-3,Press,correct short,21,10.088086,0.81
+135,delta 1-3,Press,early long (hold>0.3),29,25.479103,0.9700000000000002
+135,delta 1-3,Release,correct long,28,21.029018,-0.1200000000000001
+135,delta 1-3,Release,late short,20,16.59559,-0.04999999999999982
+135,delta 1-3,Release,correct short,21,6.780541,-0.040000000000000036
+135,delta 1-3,Release,early long (hold>0.3),29,11.87017,0.1499999999999999
+135,theta 4-7,Press,correct long,28,29.728054,0.6299999999999999
+135,theta 4-7,Press,late short,20,30.10633,0.5
+135,theta 4-7,Press,correct short,21,22.058355,0.3999999999999999
+135,theta 4-7,Press,early long (hold>0.3),29,34.086872,0.75
+135,theta 4-7,Release,correct long,28,31.049955,-0.5
+135,theta 4-7,Release,late short,20,23.329556,-0.6699999999999999
+135,theta 4-7,Release,correct short,21,21.252537,-0.27
+135,theta 4-7,Release,early long (hold>0.3),29,27.352678,-0.040000000000000036
+135,alpha 8-12,Press,correct long,28,18.33998,0.8300000000000001
+135,alpha 8-12,Press,late short,20,17.353785,0.3599999999999999
+135,alpha 8-12,Press,correct short,21,17.336977,0.3700000000000001
+135,alpha 8-12,Press,early long (hold>0.3),29,20.045162,0.7799999999999998
+135,alpha 8-12,Release,correct long,28,17.22368,-0.56
+135,alpha 8-12,Release,late short,20,17.172146,-1.26
+135,alpha 8-12,Release,correct short,21,15.488064,-0.3599999999999999
+135,alpha 8-12,Release,early long (hold>0.3),29,19.792534,-0.9700000000000002
+135,beta 13-29,Press,correct long,28,17.839193,0.41999999999999993
+135,beta 13-29,Press,late short,20,18.747389,0.41999999999999993
+135,beta 13-29,Press,correct short,21,14.8808,0.33999999999999986
+135,beta 13-29,Press,early long (hold>0.3),29,18.794239,0.6600000000000001
+135,beta 13-29,Release,correct long,28,17.798233,-0.8399999999999999
+135,beta 13-29,Release,late short,20,15.261102,-0.6299999999999999
+135,beta 13-29,Release,correct short,21,14.757848,-0.27
+135,beta 13-29,Release,early long (hold>0.3),29,18.30119,-0.96
+135,lowG 30-60,Press,correct long,28,2.5060058,1.48
+135,lowG 30-60,Press,late short,20,3.4988523,0.56
+135,lowG 30-60,Press,correct short,21,8.755005,0.8300000000000001
+135,lowG 30-60,Press,early long (hold>0.3),29,4.6875954,0.96
+135,lowG 30-60,Release,correct long,28,1.9087791,-0.18000000000000016
+135,lowG 30-60,Release,late short,20,6.9993377,-1.26
+135,lowG 30-60,Release,correct short,21,2.0473003,-0.8300000000000001
+135,lowG 30-60,Release,early long (hold>0.3),29,11.021292,-0.9700000000000002
+135,highG 61-100,Press,correct long,28,-17.33107,0.3700000000000001
+135,highG 61-100,Press,late short,20,-14.9089575,0.31000000000000005
+135,highG 61-100,Press,correct short,21,-16.95661,0.20999999999999996
+135,highG 61-100,Press,early long (hold>0.3),29,-16.817707,0.9199999999999999
+135,highG 61-100,Release,correct long,28,-16.314835,-1.04
+135,highG 61-100,Release,late short,20,-15.938055,-1.37
+135,highG 61-100,Release,correct short,21,-15.150309,-0.41999999999999993
+135,highG 61-100,Release,early long (hold>0.3),29,-16.367262,-0.9700000000000002
+136,delta 1-3,Press,correct long,20,1.7919064,-0.29000000000000004
+136,delta 1-3,Press,late short,18,4.4915557,0.5
+136,delta 1-3,Press,correct short,19,5.369079,-0.08999999999999986
+136,delta 1-3,Press,early long (hold>0.3),15,47.0845,0.96
+136,delta 1-3,Release,correct long,20,-1.1573017,-0.8399999999999999
+136,delta 1-3,Release,late short,18,5.6525946,-0.6699999999999999
+136,delta 1-3,Release,correct short,19,5.138135,-0.6800000000000002
+136,delta 1-3,Release,early long (hold>0.3),15,17.423462,-0.9300000000000002
+136,theta 4-7,Press,correct long,20,17.44256,0.6099999999999999
+136,theta 4-7,Press,late short,18,12.725603,0.6400000000000001
+136,theta 4-7,Press,correct short,19,13.362276,0.8300000000000001
+136,theta 4-7,Press,early long (hold>0.3),15,21.293236,0.4700000000000002
+136,theta 4-7,Release,correct long,20,15.187014,-0.71
+136,theta 4-7,Release,late short,18,14.269042,-0.43000000000000016
+136,theta 4-7,Release,correct short,19,10.332787,-0.27
+136,theta 4-7,Release,early long (hold>0.3),15,17.419327,-0.4700000000000002
+136,alpha 8-12,Press,correct long,20,6.9945455,0.9900000000000002
+136,alpha 8-12,Press,late short,18,8.545041,0.6800000000000002
+136,alpha 8-12,Press,correct short,19,13.4752035,0.41999999999999993
+136,alpha 8-12,Press,early long (hold>0.3),15,11.11554,-0.040000000000000036
+136,alpha 8-12,Release,correct long,20,9.287537,-0.31000000000000005
+136,alpha 8-12,Release,late short,18,6.0884237,-0.43000000000000016
+136,alpha 8-12,Release,correct short,19,12.5049,-0.33999999999999986
+136,alpha 8-12,Release,early long (hold>0.3),15,15.514362,-0.8500000000000001
+136,beta 13-29,Press,correct long,20,5.6596637,0.8599999999999999
+136,beta 13-29,Press,late short,18,6.7731977,0.7200000000000002
+136,beta 13-29,Press,correct short,19,2.5187612,-0.3799999999999999
+136,beta 13-29,Press,early long (hold>0.3),15,7.528639,0.7400000000000002
+136,beta 13-29,Release,correct long,20,5.3913713,-0.52
+136,beta 13-29,Release,late short,18,7.2999597,-1.39
+136,beta 13-29,Release,correct short,19,10.826885,-0.81
+136,beta 13-29,Release,early long (hold>0.3),15,5.749941,-0.9199999999999999
+136,lowG 30-60,Press,correct long,20,2.785349,1.17
+136,lowG 30-60,Press,late short,18,4.3608427,1.5899999999999999
+136,lowG 30-60,Press,correct short,19,11.720217,0.79
+136,lowG 30-60,Press,early long (hold>0.3),15,7.691729,0.96
+136,lowG 30-60,Release,correct long,20,7.1291447,-1.43
+136,lowG 30-60,Release,late short,18,3.865528,-0.31000000000000005
+136,lowG 30-60,Release,correct short,19,2.698958,-0.18999999999999995
+136,lowG 30-60,Release,early long (hold>0.3),15,10.406399,-0.9300000000000002
+136,highG 61-100,Press,correct long,20,-4.7856274,0.08999999999999986
+136,highG 61-100,Press,late short,18,-7.5688004,0.04999999999999982
+136,highG 61-100,Press,correct short,19,-5.7861686,0.14000000000000012
+136,highG 61-100,Press,early long (hold>0.3),15,-7.100707,-0.020000000000000018
+136,highG 61-100,Release,correct long,20,-11.081701,-1.47
+136,highG 61-100,Release,late short,18,-6.056297,0.6000000000000001
+136,highG 61-100,Release,correct short,19,-20.12071,-0.8300000000000001
+136,highG 61-100,Release,early long (hold>0.3),15,-7.9439106,-0.8500000000000001

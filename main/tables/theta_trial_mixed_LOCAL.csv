@@ -1,0 +1,7 @@
+measure,model,contrast,diff_%,p,n_trials,n_sessions
+hold-pre,mixedlm,late − correct,0.02373077974602289,0.9735549963111992,3660,60
+hold-pre,mixedlm,early − correct,-0.3140306456998032,0.6726840009990244,3660,60
+post-hold,mixedlm,late − correct,0.7727716945663987,0.30792881872159017,3660,60
+post-hold,mixedlm,early − correct,5.838933648914724,4.894982577565139e-13,3660,60
+post-pre,mixedlm,late − correct,1.423420514248086,0.08018423058896615,5494,60
+post-pre,mixedlm,early − correct,10.026374010673322,7.804283083237966e-87,5494,60

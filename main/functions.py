@@ -987,3 +987,50 @@ def burst_session_values(df, ref, group, typ, a, b, min_tr=1):
     return pd.DataFrame({"session": g.index.get_level_values(0), "rat": g.index.get_level_values(1),
                          "value": 100 * (g[("mean", a)] - g[("mean", b)]).values,
                          "n_a": g[("count", a)].values, "n_b": g[("count", b)].values})
+
+def _runs(mask, fs):
+    """start and end times (s) of every run of True in a bool array; end = first sample after the run"""
+    d = np.diff(np.concatenate([[0], mask.astype(np.int8), [0]]))
+    return np.flatnonzero(d == 1) / fs, np.flatnonzero(d == -1) / fs
+
+
+def bursts_session_exact(recs, trials, rep, chreg, session, rat, out_file, bands=("beta 15-30",), verbose=True):
+    """
+    Karvat 2021 bursts (same detection as bursts_session: karvat_bursts, same representative channels, same artifact rule),
+    but saving EXACT times instead of 50-ms bins. Saved to out_file (.npz) + trial table (<out_file>_trials.csv):
+      <ref>|<region>|channel, |distance_um, |fs
+      <ref>|<region>|art_start_s, |art_end_s          artifact periods (bursts cannot be detected there)
+      <ref>|<band>|<region>|burst_start_s, |burst_end_s   every burst (run of burst-on samples), session clock in s
+      <ref>|<band>|<region>|peak_s                        every burst peak (event), session clock in s
+    Times are on the same clock as trials press_s / tone_s / release_s (sample index / fs).
+    """
+    t0 = _time.time()
+    res = {}
+    for ref, rec in recs.items():
+        fs = rec.get_sampling_frequency()
+        pick, dist_um = pick_region_channels(rec, session, rep, chreg, rat)
+        if not pick:
+            continue
+        X = read_full(rec, list(pick.values()))
+        for j, (reg, cid) in enumerate(pick.items()):
+            x = X[:, j]
+            art = _ndi_dilate(np.abs(x) > BURST_ART_UV, BURST_ART_PAD)
+            res[f"{ref}|{reg}|channel"] = np.array([cid])
+            res[f"{ref}|{reg}|distance_um"] = np.array([dist_um[reg]])
+            res[f"{ref}|{reg}|fs"] = np.array([fs])
+            res[f"{ref}|{reg}|art_start_s"], res[f"{ref}|{reg}|art_end_s"] = _runs(art, fs)
+            for band in bands:
+                cfg = BURST_BANDS[band]
+                on, ev = karvat_bursts(x, fs, cfg["range"], cfg["n_cycles"], art, skip=cfg["skip"])
+                key = f"{ref}|{band}|{reg}"
+                res[key + "|burst_start_s"], res[key + "|burst_end_s"] = _runs(on, fs)
+                res[key + "|peak_s"] = np.flatnonzero(ev) / fs
+                if verbose:
+                    print(f"    {ref} {reg} {band}: {len(res[key + '|burst_start_s'])} bursts, "
+                          f"occupancy {on[~art].mean():.3f} ({_time.time() - t0:.0f} s)", flush=True)
+        del X
+    os.makedirs(os.path.dirname(out_file), exist_ok=True)
+    trials.to_csv(out_file.replace(".npz", "_trials.csv"), index=False)
+    np.savez_compressed(out_file.replace(".npz", ".tmp.npz"), **res)
+    os.replace(out_file.replace(".npz", ".tmp.npz"), out_file)          # file appears only when complete
+    return res

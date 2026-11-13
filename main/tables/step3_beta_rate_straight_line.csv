@@ -1,0 +1,14 @@
+,IL beta LOCAL (bursts/s)
+sessions,60.0
+n_correct,2743.0
+n_late,490.0
+correct_change,-0.15751155927198196
+p_correct_change,0.423350011275788
+late_change,-1.4121972075575944
+p_late_change,0.0006612188980087961
+late_x_position,-1.2546856482856124
+p_interaction,0.005258071231829821
+late_minus_correct_start,0.8605557070900558
+p_start,0.0018171878573172732
+late_minus_correct_end,-0.39412994119555655
+p_end,0.11868362673344075
