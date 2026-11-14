@@ -1,0 +1,25 @@
+ref,comparison,band,test,n_sessions,up,mean_%,p
+CMR,C early − correct (time-matched),theta 4-7,IL,50,18,-1.5083310488752777,0.712028797120288
+CMR,C early − correct (time-matched),theta 4-7,PL,48,23,-4.689736473952333,0.07999200079992001
+CMR,C early − correct (time-matched),theta 4-7,IL − PL,48,26,3.6403012954282277,0.29957004299570045
+CMR,C early − correct (time-matched),beta 13-29,IL,50,23,-0.38514048119372424,0.8418158184181582
+CMR,C early − correct (time-matched),beta 13-29,PL,48,22,0.25759215219465226,0.8136186381361864
+CMR,C early − correct (time-matched),beta 13-29,IL − PL,48,26,-0.4900003226010363,0.803919608039196
+CMR,D late − correct (before tone),theta 4-7,IL,33,15,-2.5470490171448312,0.6605339466053395
+CMR,D late − correct (before tone),theta 4-7,PL,32,18,2.19400544496835,0.5265473452654734
+CMR,D late − correct (before tone),theta 4-7,IL − PL,32,14,-4.464428948748966,0.3999600039996
+CMR,D late − correct (before tone),beta 13-29,IL,33,11,-3.199741096635289,0.24017598240175983
+CMR,D late − correct (before tone),beta 13-29,PL,32,18,2.549267924158105,0.1613838616138386
+CMR,D late − correct (before tone),beta 13-29,IL − PL,32,10,-5.900245778517254,0.028097190280971903
+LOCAL,C early − correct (time-matched),theta 4-7,IL,50,27,0.2535545003926609,0.8266173382661733
+LOCAL,C early − correct (time-matched),theta 4-7,PL,48,21,-0.1712426538324041,0.8363163683631637
+LOCAL,C early − correct (time-matched),theta 4-7,IL − PL,48,25,0.09655514527839859,0.9434056594340566
+LOCAL,C early − correct (time-matched),beta 13-29,IL,50,29,1.2704465123982933,0.10088991100889912
+LOCAL,C early − correct (time-matched),beta 13-29,PL,48,22,-0.21125000128836557,0.644035596440356
+LOCAL,C early − correct (time-matched),beta 13-29,IL − PL,48,29,1.472312508657292,0.12918708129187081
+LOCAL,D late − correct (before tone),theta 4-7,IL,33,15,0.36975835872483653,0.8966103389661034
+LOCAL,D late − correct (before tone),theta 4-7,PL,32,19,-0.1214829146153451,0.9166083391660834
+LOCAL,D late − correct (before tone),theta 4-7,IL − PL,32,16,0.5536899875837165,0.8589141085891411
+LOCAL,D late − correct (before tone),beta 13-29,IL,33,12,-1.1383674358616425,0.2622737726227377
+LOCAL,D late − correct (before tone),beta 13-29,PL,32,19,0.8683480863844517,0.15528447155284472
+LOCAL,D late − correct (before tone),beta 13-29,IL − PL,32,11,-2.0821559875275453,0.08589141085891411
