@@ -1,0 +1,289 @@
+measure,group,split,rat,part,sessions,late_higher,late_minus_correct,p
+occupancy (%-points),IL,trial number,all,start,33,22,7.8173166910807295,0.0150984901509849
+occupancy (%-points),IL,trial number,all,middle,46,25,2.639749817226244,0.0791920807919208
+occupancy (%-points),IL,trial number,all,end,38,18,-1.8543999571549266,0.5787421257874212
+occupancy (%-points),IL,trial number,134,start,8,5,8.89426875114441,0.23597640235976403
+occupancy (%-points),IL,trial number,134,middle,9,5,1.466029167175293,0.6438356164383562
+occupancy (%-points),IL,trial number,134,end,7,2,-12.601005826677595,0.06409359064093591
+occupancy (%-points),IL,trial number,135,start,8,4,3.302886128425598,0.6135386461353864
+occupancy (%-points),IL,trial number,135,middle,18,13,7.45042445924547,0.012798720127987202
+occupancy (%-points),IL,trial number,135,end,17,9,-0.5712556838989258,0.9094090590940906
+occupancy (%-points),IL,trial number,136,start,17,13,9.434953633476706,0.05299470052994701
+occupancy (%-points),IL,trial number,136,middle,19,7,-1.3617584830836247,0.41045895410458955
+occupancy (%-points),IL,trial number,136,end,14,7,1.960799217224121,0.7595240475952405
+occupancy (%-points),IL,clock time,all,start,31,18,7.000674124686949,0.05089491050894911
+occupancy (%-points),IL,clock time,all,middle,46,23,1.9868702266527258,0.18718128187181282
+occupancy (%-points),IL,clock time,all,end,38,20,1.0322859663712352,0.7570242975702429
+occupancy (%-points),IL,clock time,134,start,6,3,0.8418696721394857,0.842015798420158
+occupancy (%-points),IL,clock time,134,middle,8,3,2.6966781616210938,0.8283171682831717
+occupancy (%-points),IL,clock time,134,end,7,2,-15.460340227399554,0.11248875112488751
+occupancy (%-points),IL,clock time,135,start,7,4,10.179190499441964,0.46305369463053697
+occupancy (%-points),IL,clock time,135,middle,19,13,4.340055867245323,0.0800919908009199
+occupancy (%-points),IL,clock time,135,end,15,10,5.67328847249349,0.21027897210278973
+occupancy (%-points),IL,clock time,136,start,18,11,7.817519240909153,0.08639136086391361
+occupancy (%-points),IL,clock time,136,middle,19,7,-0.6651819128739206,0.7384261573842615
+occupancy (%-points),IL,clock time,136,end,16,8,3.8968700766563416,0.517948205179482
+occupancy (%-points),IL,water drunk,all,start,33,20,4.778086142106489,0.09819018098190181
+occupancy (%-points),IL,water drunk,all,middle,45,29,2.879905817243788,0.065993400659934
+occupancy (%-points),IL,water drunk,all,end,37,16,-2.1530419426995353,0.5535446455354465
+occupancy (%-points),IL,water drunk,134,start,8,5,7.517874717712402,0.23297670232976703
+occupancy (%-points),IL,water drunk,134,middle,9,5,1.8902083502875433,0.5661433856614339
+occupancy (%-points),IL,water drunk,134,end,8,2,-17.328405380249023,0.032596740325967405
+occupancy (%-points),IL,water drunk,135,start,9,4,3.8583960003323026,0.5342465753424658
+occupancy (%-points),IL,water drunk,135,middle,18,13,6.978806363211738,0.0183981601839816
+occupancy (%-points),IL,water drunk,135,end,15,7,-0.61774107615153,0.9081091890810918
+occupancy (%-points),IL,water drunk,136,start,16,11,3.9255175590515137,0.3548645135486451
+occupancy (%-points),IL,water drunk,136,middle,18,11,-0.7241459952460395,0.6954304569543046
+occupancy (%-points),IL,water drunk,136,end,14,7,4.873629093170166,0.4527547245275472
+occupancy (%-points),PL,trial number,all,start,32,15,-1.0990323722362518,0.7039296070392961
+occupancy (%-points),PL,trial number,all,middle,45,19,-1.495585674709744,0.39346065393460655
+occupancy (%-points),PL,trial number,all,end,36,13,-4.713977124955919,0.0917908209179082
+occupancy (%-points),PL,trial number,134,start,8,3,3.162655830383301,0.5456454354564544
+occupancy (%-points),PL,trial number,134,middle,9,4,0.46369043986002606,0.9427057294270573
+occupancy (%-points),PL,trial number,134,end,7,2,-11.371707371303014,0.0948905109489051
+occupancy (%-points),PL,trial number,135,start,7,3,-7.780541828700474,0.1386861313868613
+occupancy (%-points),PL,trial number,135,middle,17,4,-3.41399091832778,0.053594640535946404
+occupancy (%-points),PL,trial number,135,end,15,8,-0.7651137669881185,0.8467153284671532
+occupancy (%-points),PL,trial number,136,start,17,9,-0.35332292668959675,0.9401059894010599
+occupancy (%-points),PL,trial number,136,middle,19,11,-0.7071959846898129,0.8327167283271673
+occupancy (%-points),PL,trial number,136,end,14,3,-5.616037028176444,0.2622737726227377
+occupancy (%-points),PL,clock time,all,start,30,15,-2.065222708384196,0.44295570442955706
+occupancy (%-points),PL,clock time,all,middle,45,21,0.7516639073689778,0.6483351664833517
+occupancy (%-points),PL,clock time,all,end,36,15,-6.56584554248386,0.046295370462953706
+occupancy (%-points),PL,clock time,134,start,6,2,1.7782452901204426,0.9701029897010299
+occupancy (%-points),PL,clock time,134,middle,8,4,2.5475189685821533,0.43855614438556145
+occupancy (%-points),PL,clock time,134,end,7,3,-7.124332972935268,0.3330666933306669
+occupancy (%-points),PL,clock time,135,start,6,3,-5.398841857910156,0.45665433456654336
+occupancy (%-points),PL,clock time,135,middle,18,5,-3.701635201772054,0.04689531046895311
+occupancy (%-points),PL,clock time,135,end,13,7,-3.9644858286930966,0.4370562943705629
+occupancy (%-points),PL,clock time,136,start,18,10,-2.235172324710422,0.5513448655134486
+occupancy (%-points),PL,clock time,136,middle,19,12,4.214429353412829,0.18668133186681332
+occupancy (%-points),PL,clock time,136,end,16,5,-8.435112059116364,0.1197880211978802
+occupancy (%-points),PL,water drunk,all,start,32,11,-2.8332340717315674,0.34466553344665535
+occupancy (%-points),PL,water drunk,all,middle,44,19,-0.9976653835990212,0.5775422457754225
+occupancy (%-points),PL,water drunk,all,end,37,18,-3.8278064470033386,0.1621837816218378
+occupancy (%-points),PL,water drunk,134,start,8,3,1.716325283050537,0.7496250374962504
+occupancy (%-points),PL,water drunk,134,middle,9,5,0.8499408298068576,0.8264173582641736
+occupancy (%-points),PL,water drunk,134,end,8,4,-5.545126438140869,0.3251674832516748
+occupancy (%-points),PL,water drunk,135,start,8,3,-9.340853214263916,0.1351864813518648
+occupancy (%-points),PL,water drunk,135,middle,17,4,-2.880774610182818,0.058894110588941104
+occupancy (%-points),PL,water drunk,135,end,15,7,-3.867029889424642,0.39146085391460855
+occupancy (%-points),PL,water drunk,136,start,16,5,-1.8542041778564453,0.7088291170882912
+occupancy (%-points),PL,water drunk,136,middle,18,10,-0.142976442972819,0.9711028897110289
+occupancy (%-points),PL,water drunk,136,end,14,7,-2.8044556209019254,0.5363463653634637
+occupancy (%-points),Cg1,trial number,all,start,26,12,0.06879245317899264,0.9868013198680132
+occupancy (%-points),Cg1,trial number,all,middle,38,19,0.661842797931872,0.7410258974102589
+occupancy (%-points),Cg1,trial number,all,end,31,16,1.6036941159156062,0.6348365163483651
+occupancy (%-points),Cg1,trial number,134,start,8,3,1.8302001953125,0.8804119588041196
+occupancy (%-points),Cg1,trial number,134,middle,9,5,1.4553938971625433,0.783921607839216
+occupancy (%-points),Cg1,trial number,134,end,6,6,14.206716219584147,0.0321967803219678
+occupancy (%-points),Cg1,trial number,135,start,7,4,2.8638530458722795,0.6905309469053095
+occupancy (%-points),Cg1,trial number,135,middle,17,6,-3.430521011352539,0.20017998200179982
+occupancy (%-points),Cg1,trial number,135,end,15,8,2.4804152806599933,0.6236376362363764
+occupancy (%-points),Cg1,trial number,136,start,11,5,-2.9909062819047407,0.6499350064993501
+occupancy (%-points),Cg1,trial number,136,middle,12,8,5.864194869995117,0.049295070492950704
+occupancy (%-points),Cg1,trial number,136,end,10,2,-7.2732008934021,0.17168283171682833
+occupancy (%-points),Cg1,clock time,all,start,23,12,2.0985825580099355,0.6614338566143385
+occupancy (%-points),Cg1,clock time,all,middle,38,18,-0.6917692736575478,0.7164283571642835
+occupancy (%-points),Cg1,clock time,all,end,29,13,0.5113456331450363,0.8898110188981102
+occupancy (%-points),Cg1,clock time,134,start,6,3,6.348970413208008,0.7256274372562743
+occupancy (%-points),Cg1,clock time,134,middle,8,4,-2.6608738899230957,0.5980401959804019
+occupancy (%-points),Cg1,clock time,134,end,6,4,9.39721393585205,0.3778622137786221
+occupancy (%-points),Cg1,clock time,135,start,6,4,7.421866416931152,0.5103489651034897
+occupancy (%-points),Cg1,clock time,135,middle,18,6,-3.969591564602322,0.11748825117488251
+occupancy (%-points),Cg1,clock time,135,end,13,6,2.069945115309495,0.7214278572142786
+occupancy (%-points),Cg1,clock time,136,start,11,5,-3.1234201951460405,0.6235376462353764
+occupancy (%-points),Cg1,clock time,136,middle,12,8,5.5377005736033125,0.0660933906609339
+occupancy (%-points),Cg1,clock time,136,end,10,3,-6.846354675292969,0.2328767123287671
+occupancy (%-points),Cg1,water drunk,all,start,26,11,1.2794401829059308,0.7642235776422358
+occupancy (%-points),Cg1,water drunk,all,middle,38,17,0.49682737651624176,0.7971202879712029
+occupancy (%-points),Cg1,water drunk,all,end,31,17,1.6361409464190084,0.6478352164783522
+occupancy (%-points),Cg1,water drunk,134,start,8,3,2.8721084594726562,0.8316168383161684
+occupancy (%-points),Cg1,water drunk,134,middle,9,6,1.0680306752522786,0.825917408259174
+occupancy (%-points),Cg1,water drunk,134,end,7,6,9.420816421508789,0.31386861313868614
+occupancy (%-points),Cg1,water drunk,135,start,8,4,4.330958724021912,0.6060393960603939
+occupancy (%-points),Cg1,water drunk,135,middle,17,4,-3.495106304393095,0.1277872212778722
+occupancy (%-points),Cg1,water drunk,135,end,15,8,0.5258797327677409,0.9259074092590741
+occupancy (%-points),Cg1,water drunk,136,start,10,4,-2.4359092712402344,0.7338266173382662
+occupancy (%-points),Cg1,water drunk,136,middle,12,7,5.723664283752441,0.0831916808319168
+occupancy (%-points),Cg1,water drunk,136,end,9,3,-2.5681712892320423,0.561943805619438
+occupancy (%-points),mPFC pooled,trial number,all,start,33,19,2.8346233078927705,0.09099090090990901
+occupancy (%-points),mPFC pooled,trial number,all,middle,46,23,0.7589107181714929,0.47805219478052197
+occupancy (%-points),mPFC pooled,trial number,all,end,38,17,-1.5197149075959857,0.36376362363763626
+occupancy (%-points),mPFC pooled,trial number,134,start,8,5,4.629042387008667,0.18298170182981702
+occupancy (%-points),mPFC pooled,trial number,134,middle,9,4,1.1283724043104384,0.6648335166483351
+occupancy (%-points),mPFC pooled,trial number,134,end,7,3,-5.204659598214286,0.39016098390160986
+occupancy (%-points),mPFC pooled,trial number,135,start,8,4,0.07374203205108643,0.9836016398360165
+occupancy (%-points),mPFC pooled,trial number,135,middle,18,10,1.018930435180664,0.5976402359764024
+occupancy (%-points),mPFC pooled,trial number,135,end,17,8,1.0079820296343636,0.5918408159184082
+occupancy (%-points),mPFC pooled,trial number,136,start,17,10,3.289429047528435,0.17598240175982402
+occupancy (%-points),mPFC pooled,trial number,136,middle,19,9,0.3375680823075144,0.8284171582841716
+occupancy (%-points),mPFC pooled,trial number,136,end,14,6,-2.7465888432094028,0.3832616738326167
+occupancy (%-points),mPFC pooled,clock time,all,start,31,17,2.4865525768649195,0.148985101489851
+occupancy (%-points),mPFC pooled,clock time,all,middle,46,25,1.1697166069694187,0.283971602839716
+occupancy (%-points),mPFC pooled,clock time,all,end,38,21,-1.2721595262226306,0.5322467753224678
+occupancy (%-points),mPFC pooled,clock time,134,start,6,3,2.9896971384684243,0.5396460353964604
+occupancy (%-points),mPFC pooled,clock time,134,middle,8,4,0.861107587814331,0.7070292970702929
+occupancy (%-points),mPFC pooled,clock time,134,end,7,3,-6.116122926984515,0.2903709629037096
+occupancy (%-points),mPFC pooled,clock time,135,start,7,4,4.140055792672293,0.45845415458454153
+occupancy (%-points),mPFC pooled,clock time,135,middle,19,11,-0.31993188356098373,0.8584141585841416
+occupancy (%-points),mPFC pooled,clock time,135,end,15,10,2.599677149454753,0.3090690930906909
+occupancy (%-points),mPFC pooled,clock time,136,start,18,10,1.6758086946275499,0.39006099390060994
+occupancy (%-points),mPFC pooled,clock time,136,middle,19,10,2.7893057371440686,0.11838816118388161
+occupancy (%-points),mPFC pooled,clock time,136,end,16,8,-2.782772421836853,0.43195680431956807
+occupancy (%-points),mPFC pooled,water drunk,all,start,33,17,1.4139113859696821,0.47555244475552444
+occupancy (%-points),mPFC pooled,water drunk,all,middle,45,25,0.6624705950419109,0.47975202479752027
+occupancy (%-points),mPFC pooled,water drunk,all,end,37,17,-1.643800890123522,0.35706429357064295
+occupancy (%-points),mPFC pooled,water drunk,134,start,8,5,4.035437107086182,0.22747725227477253
+occupancy (%-points),mPFC pooled,water drunk,134,middle,9,3,1.2693937089708116,0.6200379962003799
+occupancy (%-points),mPFC pooled,water drunk,134,end,8,3,-5.9839160442352295,0.20157984201579843
+occupancy (%-points),mPFC pooled,water drunk,135,start,9,4,0.5974406136406792,0.8640135986401359
+occupancy (%-points),mPFC pooled,water drunk,135,middle,18,12,0.4745217694176568,0.7483251674832517
+occupancy (%-points),mPFC pooled,water drunk,135,end,15,6,-1.3196303049723308,0.5934406559344065
+occupancy (%-points),mPFC pooled,water drunk,136,start,16,8,0.5624133348464966,0.8694130586941305
+occupancy (%-points),mPFC pooled,water drunk,136,middle,18,10,0.5469578637017144,0.7032296770322968
+occupancy (%-points),mPFC pooled,water drunk,136,end,14,8,0.4889392852783203,0.8705129487051295
+rate (bursts/s),IL,trial number,all,start,33,17,0.8773624192584645,0.037396260373962605
+rate (bursts/s),IL,trial number,all,middle,46,23,-0.045821246893509575,0.7818218178182181
+rate (bursts/s),IL,trial number,all,end,38,19,-0.34702994948939275,0.43815618438156184
+rate (bursts/s),IL,trial number,134,start,8,3,0.7302375882863998,0.3615638436156384
+rate (bursts/s),IL,trial number,134,middle,9,1,-0.6317231390211318,0.0183981601839816
+rate (bursts/s),IL,trial number,134,end,7,2,-1.9133941105433874,0.06409359064093591
+rate (bursts/s),IL,trial number,135,start,8,4,0.5165881216526031,0.5036496350364964
+rate (bursts/s),IL,trial number,135,middle,18,12,0.4460795256826613,0.1615838416158384
+rate (bursts/s),IL,trial number,135,end,17,11,0.26227089236764345,0.7427257274272573
+rate (bursts/s),IL,trial number,136,start,17,10,1.1163737738833708,0.08649135086491351
+rate (bursts/s),IL,trial number,136,middle,19,10,-0.23430002990521884,0.2715728427157284
+rate (bursts/s),IL,trial number,136,end,14,6,-0.3037131769316537,0.6220377962203779
+rate (bursts/s),IL,clock time,all,start,31,16,1.1021870701543746,0.0182981701829817
+rate (bursts/s),IL,clock time,all,middle,46,18,-0.13606500366459723,0.5291470852914708
+rate (bursts/s),IL,clock time,all,end,38,21,0.0997870031156038,0.8324167583241676
+rate (bursts/s),IL,clock time,134,start,6,2,0.2862654725710551,0.8092190780921907
+rate (bursts/s),IL,clock time,134,middle,8,0,-0.8582921922206879,0.008099190080991902
+rate (bursts/s),IL,clock time,134,end,7,3,-2.210162843976702,0.12838716128387162
+rate (bursts/s),IL,clock time,135,start,7,4,1.714141573224749,0.32016798320167983
+rate (bursts/s),IL,clock time,135,middle,19,11,0.1819330516614412,0.6028397160283971
+rate (bursts/s),IL,clock time,135,end,15,11,1.207287073135376,0.1260873912608739
+rate (bursts/s),IL,clock time,136,start,18,10,1.136178629265891,0.038396160383961604
+rate (bursts/s),IL,clock time,136,middle,19,7,-0.14996740065122904,0.7127287271272873
+rate (bursts/s),IL,clock time,136,end,16,7,0.07210874557495117,0.9034096590340965
+rate (bursts/s),IL,water drunk,all,start,33,16,0.5175192085179415,0.18698130186981302
+rate (bursts/s),IL,water drunk,all,middle,45,25,-0.01529389222462972,0.9327067293270673
+rate (bursts/s),IL,water drunk,all,end,37,17,-0.41033704216415817,0.38686131386861317
+rate (bursts/s),IL,water drunk,134,start,8,3,0.3947323113679886,0.6185381461853815
+rate (bursts/s),IL,water drunk,134,middle,9,3,-0.5602152877383761,0.054594540545945404
+rate (bursts/s),IL,water drunk,134,end,8,2,-2.539569675922394,0.032596740325967405
+rate (bursts/s),IL,water drunk,135,start,9,4,0.12689340114593506,0.8817118288171183
+rate (bursts/s),IL,water drunk,135,middle,18,12,0.49797211752997506,0.11628837116288371
+rate (bursts/s),IL,water drunk,135,end,15,9,0.23235987027486166,0.7805219478052194
+rate (bursts/s),IL,water drunk,136,start,16,9,0.7986396737396717,0.21227877212278773
+rate (bursts/s),IL,water drunk,136,middle,18,10,-0.25609920422236127,0.34136586341365865
+rate (bursts/s),IL,water drunk,136,end,14,6,0.11776348522731236,0.8605139486051395
+rate (bursts/s),PL,trial number,all,start,32,17,0.34522300958633423,0.47305269473052697
+rate (bursts/s),PL,trial number,all,middle,45,16,-0.30468551582760284,0.14588541145885411
+rate (bursts/s),PL,trial number,all,end,36,9,-0.7949763983488083,0.0193980601939806
+rate (bursts/s),PL,trial number,134,start,8,4,1.522828608751297,0.2141785821417858
+rate (bursts/s),PL,trial number,134,middle,9,4,-0.21551148096720377,0.7466253374662534
+rate (bursts/s),PL,trial number,134,end,7,2,-1.1537568739482336,0.31896810318968105
+rate (bursts/s),PL,trial number,135,start,7,4,-0.260536858013698,0.6308369163083691
+rate (bursts/s),PL,trial number,135,middle,17,5,-0.4367383648367489,0.20177982201779823
+rate (bursts/s),PL,trial number,135,end,15,5,-0.5182448267936707,0.22137786221377861
+rate (bursts/s),PL,trial number,136,start,17,9,0.040486202520482684,0.9498050194980502
+rate (bursts/s),PL,trial number,136,middle,19,7,-0.22877329901645058,0.4958504149585041
+rate (bursts/s),PL,trial number,136,end,14,2,-0.9120842729296003,0.10978902109789021
+rate (bursts/s),PL,clock time,all,start,30,16,0.2677904009819031,0.5905409459054095
+rate (bursts/s),PL,clock time,all,middle,45,17,-0.16579638057284884,0.38946105389461055
+rate (bursts/s),PL,clock time,all,end,36,9,-0.8824120942089293,0.020397960203979604
+rate (bursts/s),PL,clock time,134,start,6,3,1.496443470319112,0.4450554944505549
+rate (bursts/s),PL,clock time,134,middle,8,4,0.2209954857826233,0.4430556944305569
+rate (bursts/s),PL,clock time,134,end,7,3,-0.640434912272862,0.6347365263473652
+rate (bursts/s),PL,clock time,135,start,6,4,0.40065646171569824,0.6612338766123388
+rate (bursts/s),PL,clock time,135,middle,18,6,-0.5071790218353271,0.1361863813618638
+rate (bursts/s),PL,clock time,135,end,13,4,-0.6998834747534531,0.1476852314768523
+rate (bursts/s),PL,clock time,136,start,18,9,-0.186049309041765,0.7697230276972302
+rate (bursts/s),PL,clock time,136,middle,19,7,-0.005240979947541889,0.987001299870013
+rate (bursts/s),PL,clock time,136,end,16,2,-1.136581614613533,0.05069493050694931
+rate (bursts/s),PL,water drunk,all,start,32,16,-0.02925914153456688,0.946905309469053
+rate (bursts/s),PL,water drunk,all,middle,44,19,-0.19047432325103067,0.3732626737326267
+rate (bursts/s),PL,water drunk,all,end,37,13,-0.686690815397211,0.06329367063293671
+rate (bursts/s),PL,water drunk,134,start,8,4,1.2220857441425323,0.40945905409459055
+rate (bursts/s),PL,water drunk,134,middle,9,4,-0.15048578050401476,0.833916608339166
+rate (bursts/s),PL,water drunk,134,end,8,4,-0.20722855627536774,0.863013698630137
+rate (bursts/s),PL,water drunk,135,start,8,4,-0.7767367959022522,0.29727027297270275
+rate (bursts/s),PL,water drunk,135,middle,17,7,-0.32323361845577464,0.33366663333666635
+rate (bursts/s),PL,water drunk,135,end,15,6,-0.8591772437095642,0.1004899510048995
+rate (bursts/s),PL,water drunk,136,start,16,8,-0.28119275718927383,0.5624437556244376
+rate (bursts/s),PL,water drunk,136,middle,18,8,-0.08508481582005818,0.818018198180182
+rate (bursts/s),PL,water drunk,136,end,14,3,-0.7758623617036002,0.19708029197080293
+rate (bursts/s),Cg1,trial number,all,start,26,10,-0.21763786444297203,0.7381261873812619
+rate (bursts/s),Cg1,trial number,all,middle,38,24,0.4512052786977668,0.1608839116088391
+rate (bursts/s),Cg1,trial number,all,end,31,15,-0.05687622485622283,0.8954104589541045
+rate (bursts/s),Cg1,trial number,134,start,8,3,0.2988479733467102,0.8929107089291071
+rate (bursts/s),Cg1,trial number,134,middle,9,7,0.6785184542338053,0.44145585441455854
+rate (bursts/s),Cg1,trial number,134,end,6,6,2.55676805973053,0.0321967803219678
+rate (bursts/s),Cg1,trial number,135,start,7,1,-1.4414231606892176,0.048095190480951906
+rate (bursts/s),Cg1,trial number,135,middle,17,8,-0.34338591379277844,0.3681631836816318
+rate (bursts/s),Cg1,trial number,135,end,15,5,-0.17098341782887777,0.7721227877212279
+rate (bursts/s),Cg1,trial number,136,start,11,6,0.1855085329575972,0.8072192780721927
+rate (bursts/s),Cg1,trial number,136,middle,12,9,1.4063912530740101,0.0240975902409759
+rate (bursts/s),Cg1,trial number,136,end,10,4,-1.453902006149292,0.06419358064193581
+rate (bursts/s),Cg1,clock time,all,start,23,9,0.03192558495894722,0.9623037696230377
+rate (bursts/s),Cg1,clock time,all,middle,38,23,0.3096657803184108,0.3227677232276772
+rate (bursts/s),Cg1,clock time,all,end,29,13,-0.2378816481294303,0.6336366363363664
+rate (bursts/s),Cg1,clock time,134,start,6,2,0.9170297781626383,0.9674032596740326
+rate (bursts/s),Cg1,clock time,134,middle,8,6,0.4041315019130707,0.6474352564743525
+rate (bursts/s),Cg1,clock time,134,end,6,5,2.299603223800659,0.06469353064693531
+rate (bursts/s),Cg1,clock time,135,start,6,1,-1.2549858093261719,0.18198180181981802
+rate (bursts/s),Cg1,clock time,135,middle,18,8,-0.45193185408910114,0.22647735226477353
+rate (bursts/s),Cg1,clock time,135,end,13,4,-0.2557350213711078,0.7165283471652835
+rate (bursts/s),Cg1,clock time,136,start,11,6,0.25109314918518066,0.7518248175182481
+rate (bursts/s),Cg1,clock time,136,middle,12,9,1.3890850841999054,0.025997400259974
+rate (bursts/s),Cg1,clock time,136,end,10,4,-1.7371631860733032,0.0888911108889111
+rate (bursts/s),Cg1,water drunk,all,start,26,13,0.009813230771284837,0.9884011598840116
+rate (bursts/s),Cg1,water drunk,all,middle,38,23,0.4222909368966755,0.195980401959804
+rate (bursts/s),Cg1,water drunk,all,end,31,15,0.06083252929872082,0.8966103389661034
+rate (bursts/s),Cg1,water drunk,134,start,8,3,0.6805556118488312,0.8611138886111389
+rate (bursts/s),Cg1,water drunk,134,middle,9,7,0.6416773531172011,0.4724527547245275
+rate (bursts/s),Cg1,water drunk,134,end,7,6,2.3101937089647566,0.0321967803219678
+rate (bursts/s),Cg1,water drunk,135,start,8,2,-1.2005074173212051,0.07019298070192981
+rate (bursts/s),Cg1,water drunk,135,middle,17,7,-0.3551826547173893,0.35296470352964704
+rate (bursts/s),Cg1,water drunk,135,end,15,6,-0.25357636213302615,0.6988301169883012
+rate (bursts/s),Cg1,water drunk,136,start,10,8,0.4414758443832397,0.5926407359264073
+rate (bursts/s),Cg1,water drunk,136,middle,12,9,1.3591720461845398,0.035396460353964605
+rate (bursts/s),Cg1,water drunk,136,end,9,3,-1.1646557913886175,0.21237876212378762
+rate (bursts/s),mPFC pooled,trial number,all,start,33,19,0.48026732242468634,0.08439156084391561
+rate (bursts/s),mPFC pooled,trial number,all,middle,46,22,0.034386121708413826,0.8176182381761824
+rate (bursts/s),mPFC pooled,trial number,all,end,38,13,-0.3953460768649453,0.07779222077792221
+rate (bursts/s),mPFC pooled,trial number,134,start,8,4,0.8506379425525665,0.33436656334366566
+rate (bursts/s),mPFC pooled,trial number,134,middle,9,3,-0.056238810221354164,0.8681131886811319
+rate (bursts/s),mPFC pooled,trial number,134,end,7,3,-0.4456483636583601,0.5146485351464853
+rate (bursts/s),mPFC pooled,trial number,135,start,8,4,-0.15683013200759888,0.7298270172982702
+rate (bursts/s),mPFC pooled,trial number,135,middle,18,7,-0.010574552747938368,0.9666033396660334
+rate (bursts/s),mPFC pooled,trial number,135,end,17,6,-0.028144605019513297,0.9314068593140686
+rate (bursts/s),mPFC pooled,trial number,136,start,17,11,0.6057858326855827,0.09769023097690231
+rate (bursts/s),mPFC pooled,trial number,136,middle,19,12,0.11990804421274286,0.5195480451954805
+rate (bursts/s),mPFC pooled,trial number,136,end,14,4,-0.8160824349948338,0.023297670232976703
+rate (bursts/s),mPFC pooled,clock time,all,start,31,18,0.5860894533895677,0.0664933506649335
+rate (bursts/s),mPFC pooled,clock time,all,middle,46,21,0.019434384677721107,0.8993100689931007
+rate (bursts/s),mPFC pooled,clock time,all,end,38,15,-0.2527538600720857,0.36776322367763226
+rate (bursts/s),mPFC pooled,clock time,134,start,6,3,0.8999128341674805,0.5138486151384861
+rate (bursts/s),mPFC pooled,clock time,134,middle,8,3,-0.0777217447757721,0.8121187881211879
+rate (bursts/s),mPFC pooled,clock time,134,end,7,3,-0.44693963868277414,0.5871412858714129
+rate (bursts/s),mPFC pooled,clock time,135,start,7,4,0.4762488433292934,0.5741425857414258
+rate (bursts/s),mPFC pooled,clock time,135,middle,19,9,-0.1593866975683915,0.5667433256674332
+rate (bursts/s),mPFC pooled,clock time,135,end,15,6,0.36878573099772133,0.49605039496050396
+rate (bursts/s),mPFC pooled,clock time,136,start,18,11,0.5241974525981479,0.13068693130686931
+rate (bursts/s),mPFC pooled,clock time,136,middle,19,9,0.2391633109042519,0.2900709929007099
+rate (bursts/s),mPFC pooled,clock time,136,end,16,6,-0.7504909485578537,0.0418958104189581
+rate (bursts/s),mPFC pooled,water drunk,all,start,33,16,0.26296652085853345,0.3270672932706729
+rate (bursts/s),mPFC pooled,water drunk,all,middle,45,21,0.051893772019280325,0.7163283671632836
+rate (bursts/s),mPFC pooled,water drunk,all,end,37,12,-0.4050108870944461,0.07479252074792521
+rate (bursts/s),mPFC pooled,water drunk,134,start,8,4,0.7657912373542786,0.38906109389061094
+rate (bursts/s),mPFC pooled,water drunk,134,middle,9,3,-0.023008028666178387,0.937006299370063
+rate (bursts/s),mPFC pooled,water drunk,134,end,8,3,-0.39060238003730774,0.5818418158184182
+rate (bursts/s),mPFC pooled,water drunk,135,start,9,4,-0.3908557759390937,0.35976402359764026
+rate (bursts/s),mPFC pooled,water drunk,135,middle,18,9,-0.007367769877115886,0.9802019798020198
+rate (bursts/s),mPFC pooled,water drunk,135,end,15,5,-0.2934646447499593,0.42285771422857715
+rate (bursts/s),mPFC pooled,water drunk,136,start,16,8,0.37932920455932617,0.22807719228077192
+rate (bursts/s),mPFC pooled,water drunk,136,middle,18,9,0.1486062142584059,0.48025197480251974
+rate (bursts/s),mPFC pooled,water drunk,136,end,14,4,-0.5327581507819039,0.1491850814918508

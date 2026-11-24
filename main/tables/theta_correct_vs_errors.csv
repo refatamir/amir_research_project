@@ -1,0 +1,13 @@
+ref,measure,pair,n_sessions,mean_a_%,mean_b_%,diff_%,sessions_a_higher,p,q,family
+CMR,hold − pre,correct − errors,53,24.1,27.1,-2.4,21,0.275972402759724,0.275972402759724,main
+CMR,post − pre,correct − errors,57,-19.4,0.6,-19.9,6,9.999000099990002e-05,0.00019998000199980003,main
+CMR,hold − pre,correct − late,33,21.7,24.3,-2.0,13,0.5095490450954905,0.6793987267939873,follow-up
+CMR,hold − pre,correct − early,38,25.6,26.7,-0.8,19,0.7163283671632836,0.7163283671632836,follow-up
+CMR,post − pre,correct − late,33,-18.9,-9.2,-10.6,9,0.0033996600339966003,0.006799320067993201,follow-up
+CMR,post − pre,correct − early,51,-19.4,3.3,-22.0,4,9.999000099990002e-05,0.00039996000399960006,follow-up
+LOCAL,hold − pre,correct − errors,53,14.3,13.5,0.7,30,0.2692730726927307,0.2692730726927307,main
+LOCAL,post − pre,correct − errors,57,-5.8,-0.1,-5.7,11,9.999000099990002e-05,0.00019998000199980003,main
+LOCAL,hold − pre,correct − late,33,12.6,12.1,0.4,17,0.5817418258174183,0.5817418258174183,follow-up
+LOCAL,hold − pre,correct − early,38,14.4,13.6,0.6,21,0.5026497350264973,0.5817418258174183,follow-up
+LOCAL,post − pre,correct − late,33,-5.1,-4.3,-0.8,13,0.46455354464553544,0.5817418258174183,follow-up
+LOCAL,post − pre,correct − early,51,-6.1,0.8,-6.8,12,9.999000099990002e-05,0.00039996000399960006,follow-up

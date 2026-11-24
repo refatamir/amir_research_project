@@ -1,0 +1,19 @@
+ref,window,pair,n_sessions,mean_a,mean_b,diff_%,sessions_a_higher,p
+CMR,pre,correct − late,29,4.305,4.293,2.8,17,0.3524647535246475
+CMR,pre,late − early,29,4.293,4.296,-0.7,15,0.8325167483251675
+CMR,pre,correct − early,29,4.305,4.296,2.0,19,0.2616738326167383
+CMR,hold,correct − late,29,21.7,24.7,-2.4,12,0.3922607739226077
+CMR,hold,late − early,29,24.7,21.4,2.8,15,0.38466153384661533
+CMR,hold,correct − early,29,21.7,21.4,0.3,14,0.879012098790121
+CMR,post,correct − late,29,-19.1,-9.2,-10.9,7,0.0051994800519948
+CMR,post,late − early,29,-9.2,0.8,-9.9,9,0.030596940305969402
+CMR,post,correct − early,29,-19.1,0.8,-19.7,2,9.999000099990002e-05
+LOCAL,pre,correct − late,29,3.267,3.274,-1.6,12,0.40205979402059794
+LOCAL,pre,late − early,29,3.274,3.27,0.9,15,0.5722427757224278
+LOCAL,pre,correct − early,29,3.267,3.27,-0.7,14,0.41485851414858516
+LOCAL,hold,correct − late,29,12.5,12.0,0.5,16,0.5971402859714029
+LOCAL,hold,late − early,29,12.0,11.3,0.6,17,0.6096390360963904
+LOCAL,hold,correct − early,29,12.5,11.3,1.1,19,0.10388961103889612
+LOCAL,post,correct − late,29,-5.4,-4.5,-0.9,11,0.46625337466253375
+LOCAL,post,late − early,29,-4.5,-0.4,-4.2,10,0.0156984301569843
+LOCAL,post,correct − early,29,-5.4,-0.4,-5.1,11,0.0035996400359964

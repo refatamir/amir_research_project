@@ -1,1 +1,5 @@
 __pycache__/
+*.docx
+*.bak
+*.pkl
+*.pdf
