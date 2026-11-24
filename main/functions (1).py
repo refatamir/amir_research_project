@@ -299,73 +299,6 @@ def event_erp(rec, event_times_s, channel_ids=None, tmin=-1.0, tmax=1.0):
     sem = np.sqrt(np.maximum(s2 / n - mean ** 2, 0) / max(n - 1, 1))
     return {"mean": mean, "sem": sem, "times": times, "n": n, "channel_ids": channel_ids}
 
-def plot_erp_depth(erp, probe_df, title, vmax=None, marks=None, save_path=None, show=True):
-    """
-    Per shank: channels (true-scale depth, deepest at the bottom) x time, colour = ERP (µV).
-    Top row: median over all channels (the part shared by the whole probe) and the shank mean.
-    marks = {label: time_s} extra dotted lines (e.g. tone delay).
-    """
-    df = pd.DataFrame({"channel_id": erp["channel_ids"], "row": np.arange(len(erp["channel_ids"]))})
-    df = df.merge(probe_df[["channel_id", "shank", "y"]], on="channel_id", how="left")
-    shanks = sorted(df["shank"].dropna().unique())
-    t = erp["times"]
-    t_edges = np.concatenate([[t[0]], (t[:-1] + t[1:]) / 2, [t[-1]]])
-    M = erp["mean"]
-    vmax = vmax or np.nanpercentile(np.abs(M), 98)
-    fig, axes = plt.subplots(2, len(shanks), figsize=(4.5 * len(shanks), 9), squeeze=False,
-                             gridspec_kw={"height_ratios": [1, 3]})
-    glob = np.median(M, axis=1)
-    for j, sh in enumerate(shanks):
-        d = df[df["shank"] == sh]
-        ax = axes[0, j]
-        ax.plot(t, glob, color="k", lw=1)
-        ax.plot(t, M[:, d["row"].values].mean(axis=1), color=f"C{int(sh)}", lw=1)
-        ax.axvline(0, color="r", lw=0.8, ls="--")
-        ax.set_title(f"shank {int(sh)} ({len(d)} ch)\nblack = median all ch, colour = mean shank",
-                     fontsize=9, fontweight="bold")
-        ax.set_ylabel("µV", fontsize=8); ax.tick_params(labelsize=7)
-        G, y_edges = _depth_grid(M[:, d["row"].values].T, d["y"].values)
-        ax = axes[1, j]
-        im = ax.pcolormesh(t_edges, y_edges, G, cmap="RdBu_r", vmin=-vmax, vmax=vmax, shading="flat")
-        ax.axvline(0, color="k", lw=0.8, ls="--")
-        for lab, tm in (marks or {}).items():
-            for a in axes[:, j]:
-                a.axvline(tm, color="grey", lw=0.8, ls=":")
-        ax.set_xlabel("Time from event (s)", fontsize=8); ax.set_ylabel("y (µm)", fontsize=8)
-        ax.tick_params(labelsize=7)
-    fig.colorbar(im, ax=axes[1, :].tolist(), fraction=0.02, pad=0.01, label="ERP (µV)")
-    fig.suptitle(f"{title}  (n = {erp['n']} trials)", fontsize=12, fontweight="bold")
-    _save_show(fig, save_path, show)
-
-
-def plot_erp_traces(erps, selected_df, title, save_path=None, show=True):
-    """
-    ERP (mean ± sem) of the selected channels, one small panel per channel (deepest at the bottom),
-    several alignments / references overlaid: erps = {label: erp dict}.
-    """
-    d = selected_df.sort_values(["shank", "y"], ascending=[True, False]).reset_index(drop=True)
-    n = len(d)
-    ncol = 3
-    nrow = int(np.ceil(n / ncol))
-    fig, axes = plt.subplots(nrow, ncol, figsize=(13, 1.9 * nrow), squeeze=False, sharex=True)
-    for k, r in d.iterrows():
-        ax = axes[k % nrow, k // nrow]
-        for c, (lab, e) in enumerate(erps.items()):
-            i = e["channel_ids"].index(r["channel_id"])
-            m, s = e["mean"][:, i], e["sem"][:, i]
-            ax.plot(e["times"], m, lw=1, color=f"C{c}", label=f"{lab} (n={e['n']})")
-            ax.fill_between(e["times"], m - s, m + s, color=f"C{c}", alpha=0.2, lw=0)
-        ax.axvline(0, color="r", lw=0.6, ls="--")
-        ax.set_title(f"sh{int(r['shank'])} y={int(r['y'])} {r['channel_id'].split('AP')[-1]}", fontsize=7)
-        ax.tick_params(labelsize=6)
-    for k in range(n, nrow * ncol):
-        axes[k % nrow, k // nrow].axis("off")
-    axes[0, 0].legend(fontsize=6, loc="upper left")
-    for a in axes[-1, :]:
-        a.set_xlabel("Time from event (s)", fontsize=7)
-    fig.suptitle(title, fontsize=11, fontweight="bold")
-    fig.tight_layout()
-    _save_show(fig, save_path, show)
 
 def alignment_sharpness(erp_a, erp_b, window=(-0.1, 0.3)):
     """
@@ -773,20 +706,6 @@ def m1_session(r, bands, min_trials=10):
                   "hold-post": float(np.median((L["hold"][cl] - L["post"][cl]).mean(axis=0)))}
     return out, int(cl.sum())
 
-def m2_session(r, bands, min_cl=10, min_el=5, early_min_hold=0.3, windows=("pre_release", "hold_early")):
-    """M2 for one band-power file: correct long minus early long (hold > early_min_hold), per window relative to each trial's
-    own pre-press: per channel mean over trials of log10(window / pre) in each group, difference, median over channels.
-    Returns ({band: {window: value}}, n_correct_long, n_early_long) or (None, n, n) if too few trials."""
-    T, lp = r["trials"], r["logpow"]
-    cl = ((T["label"] == "correct") & (T["type"] == "long")).values
-    el = ((T["label"] == "early") & (T["type"] == "long") & (T["hold_s"] > early_min_hold)).values
-    if cl.sum() < min_cl or el.sum() < min_el:
-        return None, int(cl.sum()), int(el.sum())
-    out = {}
-    for b in bands:
-        L = lp[b]
-        out[b] = {w: float(np.median((L[w][cl] - L["pre"][cl]).mean(0) - (L[w][el] - L["pre"][el]).mean(0))) for w in windows}
-    return out, int(cl.sum()), int(el.sum())
 
 def session_curve(r, align, band, cond, min_trials=5, min_on=3):
     """Time course of one condition in one band-power file: median over channels of the saved condition curve
@@ -810,108 +729,6 @@ def region_masks(r, chreg, session, regions=REGIONS):
     reg = c.reindex([str(x) for x in r["meta"]["channel_ids"]]).values
     return {k: (reg == v) for k, v in regions.items()}, reg
 
-
-def region_session_values(r, masks, bands, min_cl=10, min_el=5, min_tr=5, min_ch=10):
-    """All per-region session values of the old cell 1.12 for one band-power file.
-    Returns a list of dicts (measure, region, band, value_log10). Value = mean over trials, median over the region's channels."""
-    T, C = r["trials"], main_conditions(r["trials"])
-    cl, el = C["correct long"].values, C["early long (hold>0.3)"].values
-    tP, tR = r["times"]["Press"], r["times"]["Release"]
-    pre_tone = {"short": (0.05, 0.35), "long": (0.75, 1.05)}
-    out = []
-    def add(meas, reg, b, v):
-        out.append({"measure": meas, "region": reg, "band": b, "value_log10": float(v)})
-    def med(x, m):
-        return np.median(np.nanmean(x[:, m], axis=0))
-    with _warnings.catch_warnings(), np.errstate(invalid="ignore"):
-        _warnings.simplefilter("ignore", RuntimeWarning)
-        for reg, m in masks.items():
-            if m.sum() < min_ch:
-                continue
-            for b in bands:
-                L = r["logpow"][b]
-                if cl.sum() >= min_cl:                                              # M1, M1b
-                    add("M1 hold − pre (CL)", reg, b, med(L["hold"][cl] - L["pre"][cl], m))
-                    add("M1 hold − post (CL)", reg, b, med(L["hold"][cl] - L["post"][cl], m))
-                    add("M1b hold − hold_early (CL)", reg, b, med(L["hold"][cl] - L["hold_early"][cl], m))
-                for cname, mk in (("CL", cl), ("EL", el)):                         # Q1
-                    if mk.sum() >= min_tr:
-                        add(f"Q1 pre_release − pre ({cname})", reg, b, med(L["pre_release"][mk] - L["pre"][mk], m))
-                if cl.sum() >= min_cl and el.sum() >= min_el:                       # M2
-                    for w in ("pre_release", "hold_early"):
-                        dC = np.nanmean(L[w][cl] - L["pre"][cl], axis=0)
-                        dE = np.nanmean(L[w][el] - L["pre"][el], axis=0)
-                        add(f"M2 {w} correct − early", reg, b, np.median((dC - dE)[m]))
-                if cl.sum() >= 10 and el.sum() >= min_tr:                           # Q4a, time-matched
-                    cP = np.nanmedian(r["curves"]["Press"][b]["correct long"][m], axis=0)
-                    cP = np.where(r["counts"]["Press"]["correct long"] >= 3, cP, np.nan)
-                    eR = np.nanmedian(r["curves"]["Release"][b]["early long (hold>0.3)"][m], axis=0)
-                    for w in [(-0.3, 0.0), (-0.45, -0.15)]:
-                        e_val = np.nanmean(eR[(tR >= w[0]) & (tR <= w[1])])
-                        c_val = np.nanmean([np.nanmean(cP[(tP >= h + w[0]) & (tP <= h + w[1])])
-                                            for h in T.loc[el, "hold_s"].values])
-                        add(f"Q4a early − correct, matched {w}", reg, b, e_val - c_val)
-                for typ, (a, z) in pre_tone.items():                                # step A
-                    cC, cLt = f"correct {typ}", f"late {typ}"
-                    if C[cC].sum() < 5 or C[cLt].sum() < 5:
-                        continue
-                    mt = (tP >= a - 1e-9) & (tP <= z + 1e-9)
-                    if not ((r["counts"]["Press"][cC][mt] >= 3).all() and (r["counts"]["Press"][cLt][mt] >= 3).all()):
-                        continue
-                    Cc = np.nanmedian(r["curves"]["Press"][b][cC][m], axis=0)
-                    Lc = np.nanmedian(r["curves"]["Press"][b][cLt][m], axis=0)
-                    add(f"stepA late − correct before tone ({typ})", reg, b, np.nanmean(Lc[mt]) - np.nanmean(Cc[mt]))
-    return out
-
-
-def sign_flip_table(vals, bands, rat_of_session):
-    """vals: DataFrame with session, measure, region, band, value_log10 -> sign-flip per measure x region x band x rat (+ all)."""
-    d = vals.copy(); d["rat"] = d["session"].map(rat_of_session)
-    out = []
-    for (meas, reg), g in d.groupby(["measure", "region"], sort=False):
-        for b in bands:
-            for rat in ["all"] + sorted(g["rat"].unique()):
-                v = g[(g["band"] == b) & ((g["rat"] == rat) if rat != "all" else True)]["value_log10"].dropna()
-                m, p, n = sign_flip_p(v.values)
-                out.append({"measure": meas, "region": reg, "band": b, "rat": rat, "n_sessions": n,
-                            "sessions_gt0": int((v > 0).sum()), "mean_%": round(100 * (10 ** m - 1), 1) if n else np.nan,
-                            "p": round(p, 4) if n >= 2 else np.nan})
-    return pd.DataFrame(out)
-
-def ref_compare_values(r, chreg, session, ref, bands, min_cl=10, min_ch=10, min_span_mm=0.2,
-                       measures=(("hold − pre", "hold", "pre"), ("hold − post", "hold", "post"))):
-    """Old cell 1.19 for one band-power file (one reference): correct long trials; per channel mean over trials of
-    log10(window1 / window0); per region (>= min_ch channels): median over channels, % channels > 0, linear slope of the
-    channel % change vs DV (per mm, if the region spans >= min_span_mm); plus IL − PL. Returns a list of dicts."""
-    cl = main_conditions(r["trials"])["correct long"].values
-    if cl.sum() < min_cl:
-        return []
-    ids = [str(x) for x in r["meta"]["channel_ids"]]
-    c = chreg[chreg["session"] == session].set_index("channel_id")
-    R, D = c["region"].reindex(ids).values, c["dv_mm"].reindex(ids).values.astype(float)
-    pct = lambda v: 100 * (10 ** np.asarray(v, float) - 1)
-    rows = []
-    for b in bands:
-        L = r["logpow"][b]
-        for meas, w1, w0 in measures:
-            with _warnings.catch_warnings():
-                _warnings.simplefilter("ignore", RuntimeWarning)
-                ch = np.nanmean(L[w1][cl] - L[w0][cl], axis=0)
-            vals = {}
-            for reg, name in REGIONS.items():
-                m = (R == name) & np.isfinite(ch)
-                if m.sum() < min_ch:
-                    continue
-                ok = m & np.isfinite(D)
-                slope = (np.polyfit(D[ok], pct(ch[ok]), 1)[0]
-                         if ok.sum() >= min_ch and np.ptp(D[ok]) >= min_span_mm else np.nan)
-                vals[reg] = float(np.median(ch[m]))
-                rows.append(dict(ref=ref, session=session, band=b, measure=meas, region=reg, n_ch=int(m.sum()),
-                                 med_log=vals[reg], pct_ch_up=100 * float((ch[m] > 0).mean()), slope_pct_mm=slope))
-            if "IL" in vals and "PL" in vals:
-                rows.append(dict(ref=ref, session=session, band=b, measure=meas, region="IL − PL", n_ch=np.nan,
-                                 med_log=vals["IL"] - vals["PL"], pct_ch_up=np.nan, slope_pct_mm=np.nan))
-    return rows
 
 # ════════════════════════════════════════════════════════════════════════
 # 8. BURST RESULTS (from analysis_main cells 3.0 / 3.1, 2026-10-22), for the files of bursts_session
@@ -973,20 +790,6 @@ def burst_trial_tables(z, T, band, refs=("CMR", "LOCAL"), regions=("PL", "IL", "
     cat = lambda x: pd.concat(x, ignore_index=True) if x else pd.DataFrame()
     return cat(late), cat(early)
 
-
-def burst_session_values(df, ref, group, typ, a, b, min_tr=1):
-    """One value per session: 100 x (mean occupancy in condition a - in condition b), sessions with >= min_tr trials in each."""
-    d = df[(df["ref"] == ref) & (df["group"] == group) & (df["typ"] == typ) & df["cond"].isin([a, b])]
-    if d.empty:
-        return pd.DataFrame(columns=["session", "rat", "value", "n_a", "n_b"])
-    g = d.groupby(["session", "rat", "cond"])["occ"].agg(["mean", "count"]).unstack("cond")
-    if ("mean", a) not in g or ("mean", b) not in g:
-        return pd.DataFrame(columns=["session", "rat", "value", "n_a", "n_b"])
-    ok = (g[("count", a)] >= min_tr) & (g[("count", b)] >= min_tr)
-    g = g[ok]
-    return pd.DataFrame({"session": g.index.get_level_values(0), "rat": g.index.get_level_values(1),
-                         "value": 100 * (g[("mean", a)] - g[("mean", b)]).values,
-                         "n_a": g[("count", a)].values, "n_b": g[("count", b)].values})
 
 def _runs(mask, fs):
     """start and end times (s) of every run of True in a bool array; end = first sample after the run"""
